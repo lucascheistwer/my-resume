@@ -7,6 +7,11 @@ const nextConfig = {
   assetPrefix: isProd ? "/my-resume/" : "",
   basePath: isProd ? "/my-resume" : "",
   output: "export",
+  experimental: {
+    fontLoaders: [
+      { loader: "@next/font/google", options: { subsets: ["latin"] } },
+    ],
+  },
 };
 
 export default nextConfig;
