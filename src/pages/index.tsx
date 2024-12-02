@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Mail, Calendar, Moon, Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Kanit } from "next/font/google";
+import { Kantumruy_Pro } from "next/font/google";
 
-const kanit = Kanit({
+const kantumruyPro = Kantumruy_Pro({
   weight: ["400", "600"],
   subsets: ["latin"],
 });
@@ -78,7 +78,7 @@ export default function Curriculum() {
 
   return (
     <div
-      className={`min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 p-8 transition-colors duration-300 ${kanit.className}`}
+      className={`min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 p-8 transition-colors duration-300 ${kantumruyPro.className}`}
     >
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-end mb-4">
@@ -109,7 +109,7 @@ export default function Curriculum() {
               height={120}
               className="rounded-full mx-auto mb-4"
             />
-            <h1 className={`text-4xl font-bold mb-2 ${kanit.className}`}>
+            <h1 className={`text-4xl font-bold mb-2 ${kantumruyPro.className}`}>
               Lucas Cheistwer
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -154,7 +154,7 @@ export default function Curriculum() {
                     activeSection === section
                       ? "bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800"
                       : "bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                  } ${kanit.className}`}
+                  } ${kantumruyPro.className}`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -174,7 +174,9 @@ export default function Curriculum() {
           >
             {activeSection === "about" && (
               <div>
-                <h2 className={`text-2xl font-bold mb-4 ${kanit.className}`}>
+                <h2
+                  className={`text-2xl font-bold mb-4 ${kantumruyPro.className}`}
+                >
                   About Me
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -190,7 +192,9 @@ export default function Curriculum() {
 
             {activeSection === "experience" && (
               <div>
-                <h2 className={`text-2xl font-bold mb-6 ${kanit.className}`}>
+                <h2
+                  className={`text-2xl font-bold mb-6 ${kantumruyPro.className}`}
+                >
                   Work Experience
                 </h2>
                 <div className="space-y-8">
@@ -209,7 +213,7 @@ export default function Curriculum() {
                           href={job.companyUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`text-xl font-semibold hover:underline ${kanit.className}`}
+                          className={`text-xl font-semibold hover:underline ${kantumruyPro.className}`}
                         >
                           {job.company}
                         </Link>
@@ -221,7 +225,7 @@ export default function Curriculum() {
                         </div>
                       </div>
                       <p
-                        className={`text-lg text-gray-700 dark:text-gray-300 mb-2 ${kanit.className}`}
+                        className={`text-lg text-gray-700 dark:text-gray-300 mb-2 ${kantumruyPro.className}`}
                       >
                         {job.position}
                       </p>
@@ -236,7 +240,9 @@ export default function Curriculum() {
 
             {activeSection === "skills" && (
               <div>
-                <h2 className={`text-2xl font-bold mb-6 ${kanit.className}`}>
+                <h2
+                  className={`text-2xl font-bold mb-6 ${kantumruyPro.className}`}
+                >
                   Technical Skills
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
