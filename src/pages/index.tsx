@@ -103,7 +103,7 @@ export default function Curriculum() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/profile-picture.jpg"
+              src="/my-resume/profile-picture.jpg"
               alt="Lucas Cheistwer"
               width={120}
               height={120}
